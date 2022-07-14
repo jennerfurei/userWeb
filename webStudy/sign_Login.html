@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Sign_Login
+    </title>
+    <link rel="stylesheet" href="sign_loginCSS.css">
+
+</head>
+
+<body>
+    <div class="con">
+        <h1>登录表单</h1>
+        <section>
+            <form action="login" id="loginForm">
+                <p1>登录</p1>
+                <br>
+                <input class="textInput" type="text" name="profile" id="login_userName" placeholder="账号"
+                    onfocus="inputFocus(id)" onchange="loginInputText(id)">
+                <br>
+                <input class="textInput" type="password" name="profile" id="login_password" placeholder="密码"
+                    onfocus="inputFocus(id)" onchange="loginInputText(id)">
+                <br>
+                <input type="checkbox" name="checkboxClick" id="checkbox">
+                <p3 style="font-size:15 ;color: white;">记住我</p3>
+                <br>
+                <button class="btn" type="button" id="login_button" onclick="loginButtonClick(id)">登陆</button>
+                <br>
+                <button class="remindButton" type="button" id="remindbutton">记住密码？</button>
+                <br>
+                <p2>- 其它方式登陆 -</p2>
+                <br>
+                <button class="smallButton" type="button" id="login_qq_button">QQ</button>
+                <button class="smallButton" type="button" id="login_wx_button">微信</button>
+                <button class="smallButton" type="button" id="login_wb_button">微博</button>
+            </form>
+            <!-- <div style="width:0px ; height: 90% ;float:none ; background-color: blue;">
+
+            </div> -->
+
+            <form action="sign" id="signForm">
+                <p1>注册</p1>
+                <br>
+                <input class="textInput" type="text" name="profile" id="sign_userName" placeholder="用户名"
+                    onchange="signInputText(value)" onfocus="inputFocus(id)">
+                <br>
+                <input class="textInput" type="email" name="profile" id="sign_email" placeholder="邮箱"
+                    onchange="signInputText(value)" onfocus="inputFocus(id)">
+                <br>
+                <input class="textInput" type="password" name="profile" id="sign_passwod" placeholder="密码"
+                    onchange="signInputText(value)" onfocus="inputFocus(id)">
+                <br>
+                <input class="textInput" type="text" name="profile" id="sign_phone" placeholder="手机号码"
+                    onchange="signInputText(value)" onfocus="inputFocus(id)">
+                <br>
+                <button class="btn" type="button" id="sign_button" onclick="signButtonClick()">免费注册</button>
+                <br>
+            </form>
+        </section>
+    </div>
+    <script src="sign_LogiJS.js"></script>
+</body>
+
+</html>
